@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
+  <link rel="stylesheet" href="first.css">
+  <script src="home.js"></script>
+  <style>
+	  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+	  .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+.btn1 {
+  background-color: transparent;
+  color: black;
+  padding: 6px 6px;
+  margin: 8px 0;
+  border:1px solid black;
+  cursor: pointer;
+  width: 10%;
+  
+}
+
+.btn1:hover {
+  opacity: 0.8;
+}
+.login-form {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 50%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 10px;
+  
+}
+
+
+.login {
+  background-color: #ffffffe0;
+margin:5% auto 15% auto;
+  border: 1px solid #888;
+  width: 45%; 
+  border-radius: 15px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+			padding: 10px;
+}
+.social-container {
+	margin: 20px 0;
+	text-align:center;
+}
+.social-container a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+	text-align:center;
+} 
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #eee;
+ 
+}
+.end{
+	text-align: center;
+	background-color: rgb(233, 222, 208);
+}
+  </style>
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+    <div class="container-fluid1">
+      <ul class="nav nav-pills" role="tablist">
+        <ul class=" nav navbar-nav">
+          <li><img src="logo2.png"></li>
+          
+        </ul>
+        <ul class="nav navbar-nav right-navbar">
+          <li class="nav-item"><a   href="first-page.html">
+      <span
+            class="glyphicon glyphicon-home">Home</span></a></li>
+     
+            <li>
+              <div class="search-container" id="search-bar">
+                <form action="/action_page.php">
+               <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button> 
+               </form> 
+              </div>
+            </li>
+            
+          <li class="dropdown nav-item"><a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#"><span
+                class="glyphicon glyphicon-th-list"> </span> More</a>
+            <ul class="dropdown-menu ">
+              <button type="button" class="close"><span id="cross">&times;</span></button>
+              <li><a href="#content1">Top Brands</a></li>
+              <li><a href="#content2">Best Sellers</a></li>
+              <hr>
+              <li> Categories to Bag</li>
+              <ul>
+                <li><a href="#content3-1">Men's Wear</a></li>
+                <li><a href="#content3-2">Women's Wear</a></li>
+              </ul>
+              <hr>
+              <li><a href="#content6">Kids Wear</a></li>
+              <li><a href="#content7">Accessories</a></li>
+              <li><a href="#content4">Sports Wear</a></li>
+              <li><a href="#content5">Foot Wears</a></li>
+              <hr>
+              <li><a href="#about-sec">About Us</a></li>
+              <li><a href="#">Your Account</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item nav-link active"><a href=""> <span class="glyphicon glyphicon-user"></span>Sign Up</a>
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+<div class="login-form"></div>
+	<form class="login">
+		
+		<div class="social-container">
+			<h1>Welcome!</h1>
+			<a href="https://www.facebook.com/" class="social"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.google.com/" class="social"><i class="fa fa-google"></i></a>
+			<a href="https://www.linkedin.com/" class="social"><i class="fa fa-linkedin"></i></a>
+		</div>
+		<div class="details-container">
+		<label for="uname"><b>Username</b></label>
+		<input type="text" placeholder="Enter Username" name="uname" required>
+  
+		<label for="psw"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="psw" required>
+		  
+		<button class="btn" type="submit">Login</button>
+		<label>
+		  <input type="checkbox" checked="checked" name="remember"> Remember me
+		</label>
+	</div>
+	<div class="end">
+	
+		<span class="psw">Forgot <a href="#">password?</a></span><br>
+		<button class="btn1"  type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><a href="d.html">SignUp</a></button>
+		<span>New customer?</span>
+	  </div>
+	</form>
+</div>
+
+
+    
+    <footer>
+      <div class="footer">
+        <div class="inner-footer">
+
+
+          <div class="footer-items">
+            <div class="glow">
+              <h1><img src="logo1.png"></h1>
+            </div>
+            <p>Ultimate destination for fashion and lifestyle with stylekartt's latest and designer fashion products
+            </p>
+          </div>
+
+          <div class="footer-items">
+            <h3>Quick Links</h3>
+            <div class="border1"></div>
+            <ul class="footer-list">
+              <a href="#">
+                <li>Home</li>
+              </a>
+              <a href="# search-bar">
+                <li>Search</li>
+              </a>
+              <a href="#">
+                <li>Contact</li>
+              </a>
+              <a href="#about-sec">
+                <li>About</li>
+              </a>
+            </ul>
+          </div>
+
+
+          <div class="footer-items">
+            <h3>Categories</h3>
+            <div class="border1"></div>
+            <ul class="footer-list">
+              <a href="#content2">
+                <li>Best Seller</li>
+              </a>
+              <a href="#content1">
+                <li>Top Brands</li>
+              </a>
+              <a href="#content3">
+                <li>Men & Women collection</li>
+              </a>
+              <a href="#content6">
+                <li>Kids Wear</li>
+              </a>
+              <a href="#content4">
+                <li>Sports Wear</li>
+              </a>
+              <a href="#content5">
+                <li>Footwear</li>
+              </a>
+              <a href="#content7">
+                <li>Accessories</li>
+              </a>
+            </ul>
+          </div>
+
+
+          <div class="footer-items">
+            <h3>Contact us</h3>
+            <div class="border1"></div>
+            <ul class="footer-list">
+              <li><i class="	glyphicon glyphicon-map-marker" aria-hidden="true"></i>B-block Faridabad,Haryana-121003
+              </li>
+              <li><i class="	glyphicon glyphicon-phone" aria-hidden="true"></i>123456789</li>
+              <li><i class="	glyphicon glyphicon-envelope" aria-hidden="true"></i> stylekart@gmail.com</li>
+            </ul>
+
+
+            <div class="social-media">
+
+              <a href="https://en-gb.facebook.com/" class="social"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.google.com/" class="social"><i class="fa fa-google"></i></a>
+              <a href="https://www.linkedin.com/" class="social"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="footer-bottom">
+          Copyright &copy; stylekart 2021.
+        </div>
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
